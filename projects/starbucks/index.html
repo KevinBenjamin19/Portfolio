@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Starbucks</title>
+    <link rel="icon" href="./imgs/logo.png">
+
+    <link rel="stylesheet" href="./css/styles.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+</head>
+<body>
+    <div class="container">
+        <div class="circle"></div>
+        <nav>
+            <a href="#">
+                <img class="logo" src="./imgs/logo.png" alt="">
+            </a>
+            <ul  class="navbar">
+                <li>
+                    <a href="#" class="active">Home</a>
+                </li>
+                <li>
+                    <a href="#">Menu</a>
+                </li>
+                <li>
+                    <a href="#">What's New</a>
+                </li>
+                <li>
+                    <a href="#">Contact</a>
+                </li>
+            </ul>
+        </nav>
+
+        <section class="home">
+            <div class="home-content">
+                <div class="textBox">
+                    <h2>It's not just Coffee <br> It's <span>Starbucks</span></h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat rerum eum molestias suscipit incidunt! Nihil fugit ex quae sunt, voluptatibus esse ipsam provident dolores velit adipisci consequuntur, tempora, doloribus repellat?</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div class="imgBox">
+                    <img src="./imgs/img1.png" alt="" class="starbucks">
+                </div>
+                <ul class="thumb">
+                    <li><img onclick="starbucks_change(this.src); circle_color('#017143')" src="./imgs/img1.png" alt=""></li>
+                    <li><img onclick="starbucks_change(this.src); circle_color('#eb7495')" src="./imgs/img2.png" alt=""></li>
+                    <li><img onclick="starbucks_change(this.src); circle_color('#d752b1')" src="./imgs/img3.png" alt=""></li>
+                </ul>
+                <ul class="social">
+                    <li><a href="#"><span class="fa fa-facebook"></span></a></li>
+                    <li><a href="#"><span class="fa fa-instagram"></span></a></li>
+                    <li><a href="#"><span class="fa fa-twitter"></span></a></li>
+                </ul>
+            </div>
+        </section>
+    </div>
+    
+
+    <script src="./js/index.js"></script>
+</body>
+</html>

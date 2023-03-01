@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kevin Portfolio</title>
+    
+    <link rel="stylesheet" href="./css/style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    
+    <header class="header">
+        <div >
+            <a href="#" class="logo">Kevin</a>
+        </div>
+
+        <nav>
+            <ul class="navbar">
+                <li>
+                <a href="#" style="--i:1" class="active">Home</a>
+                </li>
+                <li>
+                    <a href="#about" style="--i:2">About</a>
+                </li>
+                <li>
+                    <a href="#skills" style="--i:3">Skills</a>
+                </li>
+                <li>
+                    <a href="#portfolio" style="--i:4">Portfolio</a>
+                </li>
+                <li>
+                    <a href="#contact" style="--i:5">Contact</a>  
+                </li>
+            </ul>
+        </nav>
+
+    </header>
+    
+    <section class="home">
+        <div class="home-content">
+            <h3>Hello, It's Me</h3>
+            <h1><span>K</span>evin <span>B</span>enjamin</h1>
+            <h3>And I'm a <span class="multiple-text"></span></h3>
+            <p>Hello There! , Hopefuly you enjoy watching my work and I hope you like it <span class="fa fa-heart"></span></p>
+            <div class="social-media">
+                <a href="#" target="_blank" style="--i:1"><span class="fa fa-facebook-square"></span></a>
+                <a href="https://www.linkedin.com/in/kevin-benjamin-14a349240/" target="_blank" style="--i:2"><span class="fa fa-linkedin-square"></span></a>
+                <a href="https://wa.me/+201221838820" target="_blank" style="--i:3"><span class="fa fa-whatsapp"></span></a>
+                <a href="https://github.com/KevinBenjamin19" target="_blank" style="--i:4"><span class="fa fa-github"></span></a>
+            </div>
+            <a href="#" class="btn">Download CV</a>
+        </div>
+
+        <div class="home-img">
+            <img src="./imgs/main.jpg" alt="">
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="about-img">
+            <img src="./imgs/about-me.png" alt="">
+        </div>
+        <div class="about-content">
+            <h2>About Me</h2>
+            <p>I'm Kevin Benjamin , studied at faculty of commerce (English section) at MIS Department , graduated at 2023 with Excellent grade.
+                I live at Alexandria, Egypt. I would like to travel abroad to explore the natural and the world.
+            </p>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="skills-content">
+
+           <div class="html">
+            <h5>HTML5</h5>
+            <div class="container">
+                <div class="bar html-bar">95%</div>
+            </div>
+           </div>
+
+           <div class="css">
+            <h5>CSS 3</h5>
+            <div class="container">
+                <div class="bar css-bar">95%</div> 
+            </div>
+           </div>
+
+           <div class="js">
+            <h5>Javascript</h5>
+            <div class="container">
+                <div class="bar js-bar">85%</div> 
+            </div>
+           </div>
+
+           <div class="bts">
+            <h5>Bootstrap 5</h5>
+            <div class="container">
+                    <div class="bar bts-bar">90%</div> 
+            </div>
+           </div>
+
+           <div class="react">
+            <h5>React JS</h5>
+            <div class="container">
+                    <div class="bar react-bar">80%</div> 
+            </div>
+            </div>
+           
+        </div>
+    </section>
+
+    <section id="portfolio">
+        <h2>Portfolio</h2>
+        <h4>Simple Projects </h4>
+        <div class="simples">
+            <div>
+                <a href="./projects/apple/index.html" target="_blank">
+                <span><img src="./imgs/apple.png" alt=""></span>
+                <h5>Simple Apple website with changing Color and mobile</h5>
+                </a>
+            </div>
+            <div>
+                <a href="./projects/starbucks/index.html" target="_blank">
+                    <span><img src="./imgs/starbucks.png" alt=""></span>
+                    <h5>Simple Starbucks website with the same idea</h5>
+                </a>
+            </div>
+        </div>
+        <h4>Advanced Projects</h4>
+        <div class="adv">
+            <div></div>
+        </div>
+        <h4>React JS Projects</h4>
+        <div class="react">
+            <div></div>
+        </div>
+    </section>
+
+<form id="contact" action="mailto:kevinbusiness72@gmail.com" method="POST">
+    <h2>Contact Me</h2>
+
+    <div class="contact-content">
+        <div>
+            <div>
+                <label for="name">Name</label>
+                <input id="name" type="text" placeholder="Write Your Name" required>
+
+                <label for="email">Email</label>
+                <input id="email" type="email" placeholder="Write Your E-mail" required>
+            </div>
+            <div>
+                <label for="message">Message</label>
+                <textarea name="" id="message" cols="30" rows="10" placeholder="Your Message"></textarea>
+            </div>
+        </div>
+        <div class="social-media">
+                <a href="#" target="_blank" style="--i:1"><span class="fa fa-facebook-square"></span></a>
+                <a href="https://www.linkedin.com/in/kevin-benjamin-14a349240/" target="_blank" style="--i:2"><span class="fa fa-linkedin-square"></span></a>
+                <a href="https://wa.me/+201221838820" target="_blank" style="--i:3"><span class="fa fa-whatsapp"></span></a>
+                <a href="https://github.com/KevinBenjamin19" target="_blank" style="--i:4"><span class="fa fa-github"></span></a>
+        </div>
+        <button type="submit">Send</button>
+    </div>
+</form>
+
+    <footer>
+        <p> <span class="fa fa-copyright"></span> Copyright. All Rights Reserved.  Design by <h4>Kevin Benjamin</h4></p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>
