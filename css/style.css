@@ -557,7 +557,13 @@ footer h4{
     #portfolio div {
         display: flex;
         flex-direction: column;
-     }
+    }
+    footer p {
+        font-size: 10px;
+    }
+    footer h4{
+        font-size: 14px;
+    }
 }
 
 
