@@ -5,22 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kevin Portfolio</title>
-    
+    <!-- css styles -->
     <link rel="stylesheet" href="./css/style.css">
 
+    <!-- Fontawesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-</head>
+
+    </head>
 <body>
     
     <header class="header">
-        <div >
-            <a href="#" class="logo">Kevin</a>
-        </div>
-
+      
+        <label class="logo">Kevin</label>
         <nav>
-            <ul class="navbar">
+            <input type="checkbox"  id="check">
+            <label for="check" class="checkbtn">
+                <i class="fa fa-bars"></i>
+            </label>
+            <ul class="">
                 <li>
-                <a href="#" style="--i:1" class="active">Home</a>
+                    <a href="#" style="--i:1" class="active">Home</a>
                 </li>
                 <li>
                     <a href="#about" style="--i:2">About</a>
@@ -36,6 +40,8 @@
                 </li>
             </ul>
         </nav>
+        
+
 
     </header>
     
@@ -132,45 +138,61 @@
         </div>
         <h4>Advanced Projects</h4>
         <div class="adv">
-            <div></div>
+            <div>
+               
+            </div>
         </div>
         <h4>React JS Projects</h4>
         <div class="react">
-            <div></div>
+            <div>
+                <a href="https://kevinbenjamin19.github.io/GTP-3/" target="_blank">
+                    <span><img src="./imgs/gpt-3.png" alt=""></span>
+                    <h5>Full Responsive website With React JS</h5>
+                    </a>
+            </div>
         </div>
     </section>
 
-<form id="contact" action="mailto:kevinbusiness72@gmail.com" method="POST">
-    <h2>Contact Me</h2>
+    <section id="contact">
+        <h2>Contact Me</h2>
 
-    <div class="contact-content">
-        <div>
+        <div class="contact-content">
             <div>
-                <label for="name">Name</label>
-                <input id="name" type="text" placeholder="Write Your Name" required>
+                <div>
+                    <label for="name">Name</label>
+                    <input id="name" type="text" placeholder="Write Your Name" required>
 
-                <label for="email">Email</label>
-                <input id="email" type="email" placeholder="Write Your E-mail" required>
+                    <label for="email">Email</label>
+                    <input id="email" type="email" placeholder="Write Your E-mail" required>
+                </div>
+                <div>
+                    <label for="message">Message</label>
+                    <textarea name="" id="message" cols="30" rows="10" placeholder="Your Message" required></textarea>
+                </div>
             </div>
-            <div>
-                <label for="message">Message</label>
-                <textarea name="" id="message" cols="30" rows="10" placeholder="Your Message"></textarea>
+            <div class="social-media">
+                    <a href="#" target="_blank" style="--i:1"><span class="fa fa-facebook-square"></span></a>
+                    <a href="https://www.linkedin.com/in/kevin-benjamin-14a349240/" target="_blank" style="--i:2"><span class="fa fa-linkedin-square"></span></a>
+                    <a href="https://wa.me/+201221838820" target="_blank" style="--i:3"><span class="fa fa-whatsapp"></span></a>
+                    <a href="https://github.com/KevinBenjamin19" target="_blank" style="--i:4"><span class="fa fa-github"></span></a>
             </div>
+            <button type="submit" onclick="sendMail()">Send</button>
         </div>
-        <div class="social-media">
-                <a href="#" target="_blank" style="--i:1"><span class="fa fa-facebook-square"></span></a>
-                <a href="https://www.linkedin.com/in/kevin-benjamin-14a349240/" target="_blank" style="--i:2"><span class="fa fa-linkedin-square"></span></a>
-                <a href="https://wa.me/+201221838820" target="_blank" style="--i:3"><span class="fa fa-whatsapp"></span></a>
-                <a href="https://github.com/KevinBenjamin19" target="_blank" style="--i:4"><span class="fa fa-github"></span></a>
-        </div>
-        <button type="submit">Send</button>
-    </div>
-</form>
+    </section>
 
     <footer>
         <p> <span class="fa fa-copyright"></span> Copyright. All Rights Reserved.  Design by <h4>Kevin Benjamin</h4></p>
     </footer>
 
+
+    <script type="text/javascript"
+            src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+    (function(){
+        emailjs.init("kj-02MWl2Jw0Qn3mr");
+    })();
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script src="./js/main.js"></script>
 </body>

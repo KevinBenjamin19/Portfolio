@@ -11,7 +11,7 @@
     font-family: sans-serif;
 }
 body{
-    background-color: #1f242d;
+    background-color: #1f242d !important; 
     color: #fff;
 }
 .header{
@@ -19,6 +19,7 @@ body{
     top: 0;
     left: 0;
     width: 100%;
+    height: 100px;
     padding: 20px 10%;
     background-color: #2121;
     display: flex;
@@ -26,6 +27,7 @@ body{
     justify-content: space-between;
     z-index: 100;
 }
+
 .header .logo{
     display: inline-block;
     font-family: logo-title;
@@ -38,16 +40,20 @@ body{
     opacity: 0;
     animation: slideRight 2s ease forwards ;
 }
-nav> ul.navbar{
-    list-style-type: none;
-    display: inline-block;
+
+nav ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+
 }
-nav>ul li{
-    float: left;
+nav ul li{
+    line-height: 80px;
+    margin: 0 .5rem;
+    
 }
-nav>ul>li>a{
+nav ul li a{
     text-decoration: none;
-    display: block;
     padding: 12px;
     font-size: 24px;
     color: #fff;
@@ -56,14 +62,26 @@ nav>ul>li>a{
     animation: slideTop .5s ease forwards ;
     animation-delay: calc(.2s * var(--i));
 }
-nav>ul>li>a:hover{
+nav ul li a:hover,
+nav ul li a.active{
     color: #0ef;
     font-weight: 500;
 }
-nav>ul>li>a.active{
+
+.checkbtn{
+    font-size: 30px;
     color: #0ef;
-    font-weight: 600;
+    float: right;
+    line-height: 80px;
+    cursor: pointer;
+    display: none;
 }
+#check{
+    display: none;
+}
+
+
+/* HOME  */
 
 .home{
     position: relative;
@@ -100,7 +118,6 @@ nav>ul>li>a.active{
     font-size: 54px;
     font-weight: 800;
     margin: -3px 0;
-    /* color: #0ef; */
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     opacity: 0;
     animation: slideRight .5s ease forwards ;
@@ -169,6 +186,8 @@ nav>ul>li>a.active{
     box-shadow: 0 0 5px #0ef;
 }
 
+/* ABOUT  */
+
 #about {
     padding: 20px 10%;
     display: flex;
@@ -209,11 +228,12 @@ nav>ul>li>a.active{
 #contact{
     padding: 100px 10%;
 }
+
+/* Skills  */
+
 .skills-content{
     display: flex;
-    
     flex-wrap: wrap;
-    
 }
 .skills-content div{
     width: 33.3%;
@@ -255,6 +275,8 @@ nav>ul>li>a.active{
     min-width: 80%;
 }
 
+/* Portfolio  */
+
 #portfolio{
     padding: 20px 10%;
 }
@@ -270,13 +292,13 @@ nav>ul>li>a.active{
 #portfolio img{
     max-width: 100%;
 }
-#portfolio .simples {
+#portfolio div {
    display: flex;
    justify-content: space-between;
    align-items: center;
    
 }
-#portfolio .simples div{
+#portfolio div div{
     margin: 20px;
     border: 2px solid #0ef;
     box-shadow: 1px 1px 3px #0ef;
@@ -285,13 +307,13 @@ nav>ul>li>a.active{
     cursor: pointer;
     transition: .5s;
 }
-#portfolio .simples div:hover{
+#portfolio div div:hover{
     transform: scale(1.1);
 }
 #portfolio a{
     text-decoration: none;
 }
-#portfolio .simples div h5 {
+#portfolio div div h5 {
     letter-spacing: 1px;
     font-size: 18px;
     text-align: center;
@@ -300,9 +322,8 @@ nav>ul>li>a.active{
     color: #fff;
 }
 
-
+/* Contact Form  */
 .contact-content{
-    
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -369,6 +390,179 @@ footer h4{
     font-weight: 700;
     letter-spacing: 1px;
 }
+
+
+/* Media Quary */
+@media screen and (max-width: 950px ) {
+    .header .logo{
+        font-size: 36px;
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    .home{
+        padding: 15px 8% 0;
+    }
+    .home-content h3{
+        font-size: 26px;
+    }
+    .home-content h1{
+        font-size: 46px;
+        font-weight: 700;
+    }
+    .home-img> img{
+        max-width: 380px;
+
+        box-shadow: 7px 7px 15px  #0ef;
+        
+    }
+}
+
+
+@media screen and (max-width: 850px ) {
+    .header{
+        margin-bottom: 150px;
+    }
+    .checkbtn{
+        display: block;
+    }
+    nav ul {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        background: #2c3e50;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        flex-direction: column;
+        transition: all .5s;
+    }
+    #check:checked ~ ul{
+        left: 0;
+    }
+    
+    #about h2,
+    #skills h2,
+    #portfolio h2,
+    #contact h2{
+        font-size: 28px;
+    }
+    #about p{
+        font-size: 16px;
+    }
+    #portfolio h4{
+        font-size: 22px;
+    }
+    #portfolio .simples div h5{
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 770px ) {
+    .home{
+        padding: 15px 5% ;
+    }
+    .home-content h3{
+        font-size: 22px;
+    }
+    .home-content h1{
+        font-size: 42px;
+        font-weight: 700;
+    }
+    .home-img> img{
+        max-width: 330px;
+
+    }
+    #portfolio h4{
+        font-size: 20px;
+    }
+    #portfolio .simples div h5{
+        font-size: 16px;
+    }
+    .contact-content{
+        flex-wrap: nowrap; 
+    }
+    .contact-content input{
+        width: 100%;
+        height: 35px;
+        font-size: 14px;
+        text-align: center;
+    }
+    .contact-content > div >div:first-of-type{
+        flex-direction: column;
+    }
+    .contact-content label{
+        align-self: flex-start;
+    }
+}
+
+@media screen and (max-width: 600px ) {
+    .home{
+        margin-top: 100px;
+        flex-direction: column-reverse;
+        padding-top: 5rem;
+    }
+    .home-content h3{
+        font-size: 22px;
+        text-align: left;
+    }
+    .home-content h1{
+        font-size: 38px;
+        font-weight: 600;
+        text-align: left;
+    }
+    .home-img> img{
+        max-width: 300px;
+        margin-top: 5rem;
+    }
+    .home-content p{
+        font-size: 14px;
+    }
+    .home-content {
+        text-align: center;
+    }
+    #about h2,
+    #skills h2,
+    #portfolio h2,
+    #contact h2{
+        font-size: 22px;
+    }
+    #about{
+        padding-top: 50px;
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    .about-img{
+        padding-top: 30px;
+    }
+    #about p{
+        font-size: 14px;
+    }
+    .skills-content div{
+        width: 100%;
+    }
+    .html-bar,
+    .css-bar{
+        max-width: 95%;
+    }
+    .js-bar{
+        max-width: 85%;
+    }
+    .bts-bar{
+        max-width: 90%;
+    }
+    .react-bar{
+        max-width: 80%;
+    }
+    #portfolio div {
+        display: flex;
+        flex-direction: column;
+     }
+}
+
+
+
+
 
 
 /* KEYFRAMES ANIMATION  */
