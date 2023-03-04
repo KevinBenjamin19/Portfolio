@@ -1,10 +1,3 @@
-const toggle = document.querySelector(".navbar")
-
-const toggleMenuOpen = () => document.body.classList.toggle("open");
-
-
-
-
 
 var typed = new Typed(".multiple-text", {
     strings: ["Frontend Developer", "Web Designer"],

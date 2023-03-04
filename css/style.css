@@ -4,6 +4,27 @@
     src: url(../fonts/Black\ Bone.ttf);
 }
 
+/* color  */
+.bg-gradient{
+    background:-moz-linear-gradient(137deg, rgba(0, 0, 0, 1) 10%, rgba(16, 127, 140, 1) 50%, rgba(107, 25, 187, 1) 100%); 
+
+    /* safari 5.1+,chrome 10+ */
+    background:-webkit-linear-gradient(137deg, rgba(0, 0, 0, 1) 10%, rgba(16, 127, 140, 1) 50%, rgba(107, 25, 187, 1) 100%);
+
+    /* opera 11.10+ */
+    background:-o-linear-gradient(137deg, rgba(0, 0, 0, 1) 10%, rgba(16, 127, 140, 1) 50%, rgba(107, 25, 187, 1) 100%);
+
+    /* ie 6-9 */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6B19BB', endColorstr='#000000', GradientType=1 );
+
+    /* ie 10+ */
+    background:-ms-linear-gradient(137deg, rgba(0, 0, 0, 1) 10%, rgba(16, 127, 140, 1) 50%, rgba(107, 25, 187, 1) 100%);
+
+    /* global 94%+ browsers support */
+    background:linear-gradient(137deg, rgba(0, 0, 0, 1) 10%, rgba(16, 127, 140, 1) 50%, rgba(107, 25, 187, 1) 100%);
+}
+
+
 *{
     padding: 0;
     margin: 0;
@@ -11,7 +32,7 @@
     font-family: sans-serif;
 }
 body{
-    background-color: #1f242d !important; 
+    /* background-color: #1f242d ;  */
     color: #fff;
 }
 .header{
