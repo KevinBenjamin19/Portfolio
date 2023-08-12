@@ -284,16 +284,16 @@ nav ul li a.active{
 }
 .html-bar,
 .css-bar{
-    min-width: 95%;
-}
-.js-bar{
-    min-width: 85%;
-}
-.bts-bar{
     min-width: 90%;
 }
-.react-bar{
+.js-bar{
+    min-width: 75%;
+}
+.bts-bar{
     min-width: 80%;
+}
+.react-bar{
+    min-width: 60%;
 }
 
 /* Portfolio  */
